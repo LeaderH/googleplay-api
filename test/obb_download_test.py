@@ -14,6 +14,12 @@ server = GooglePlayAPI('it_IT', 'Europe/Rome')
 
 print('\nLogging in with email and password\n')
 server.login(args.email, args.password, None, None)
+
+print('\nCredentials for next login')
+print(f'\tgfsId:{server.gsfId}')
+print(f'\tauthSubToken:{server.authSubToken}')
+
+
 docid = 'com.pixel.gun3d'
 
 print('\nDownloading apk\n')
